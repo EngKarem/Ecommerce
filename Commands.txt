@@ -1,0 +1,10 @@
+pip install django-rest-framework /*For API*/
+
+pip install django-cors-headers /*For Security*/
+
+pip install djoser /*For Auth*/
+
+pip install pillow /*For Picture Edit*/
+
+pip install stripe
+
