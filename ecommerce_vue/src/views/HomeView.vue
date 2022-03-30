@@ -58,7 +58,7 @@ export default {
      getLatestProducts() {
       
         axios
-          .get('/api/v1/latest-products/')
+          .get('/api/v1/latest-product/')
           .then(response => {
             this.latestProducts = response.data
         })
