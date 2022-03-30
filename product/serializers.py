@@ -1,7 +1,7 @@
+
 from rest_framework import serializers
 
 from .models import Category, Product
-
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,4 +14,5 @@ class ProductSerializer(serializers.ModelSerializer):
             "price",
             "get_image",
             "get_thumbnail"
+            
         )

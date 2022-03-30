@@ -8,3 +8,8 @@ pip install pillow /*For Picture Edit*/
 
 pip install stripe
 
+npm install axios /* to talk with backend*/
+
+npm install bulma css framework
+
+npm install -g @vue/cli

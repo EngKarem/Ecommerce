@@ -23,7 +23,7 @@
     
         <div class = "box" >
           <figure class="image mb-4 "> 
-            <img v-bind:src="product.get_thumbnail" alt="">
+            <img v-bind:src="product.get_thumbnail">
           
           </figure>
           <h3 class="is-size-4">{{product.name}}</h3>
@@ -58,7 +58,7 @@ export default {
      getLatestProducts() {
       
         axios
-          .get('/api/v1/latest-product/')
+          .get('/api/v1/latest-products/')
           .then(response => {
             this.latestProducts = response.data
         })
@@ -71,8 +71,8 @@ export default {
 </script>
 <style scoped>
   .image{
-      margin-top: -1.25px;
-      margin-left: -1.25px;
-      margin-right: -1.25px;
+      margin-top: -1.25;
+      margin-left: -1.25;
+      margin-right: -1.25;
   }
 </style>
