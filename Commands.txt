@@ -11,5 +11,9 @@ pip install stripe
 npm install axios /* to talk with backend*/
 
 npm install bulma css framework
+npm install bulma-toast
 
 npm install -g @vue/cli
+npm audit fix
+وبعدين خش على ecomerce_vue حط المسار على cmd واكتب npm run serve
+اعملوا اكونت علي حاجه اسمه stripe

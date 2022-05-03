@@ -72,6 +72,7 @@
 
 <script>
 import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -83,7 +84,9 @@ export default {
   },
   beforeCreate() {
     this.$store.commit('initializeStore')
+
     const token = this.$store.state.token
+
     if (token) {
         axios.defaults.headers.common['Authorization'] = "Token " + token
     } else {
@@ -96,9 +99,11 @@ export default {
   computed: {
       cartTotalLength() {
           let totalLength = 0
+
           for (let i = 0; i < this.cart.items.length; i++) {
               totalLength += this.cart.items[i].quantity
           }
+
           return totalLength
       }
   }
@@ -107,6 +112,7 @@ export default {
 
 <style lang="scss">
 @import '../node_modules/bulma';
+
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
@@ -131,11 +137,14 @@ export default {
     transform: rotate(360deg);
   }
 }
+
 .is-loading-bar {
   height: 0;
   overflow: hidden;
+
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+
   &.is-loading {
     height: 80px;
   }

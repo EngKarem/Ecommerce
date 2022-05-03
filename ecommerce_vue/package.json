@@ -9,7 +9,10 @@
   "dependencies": {
     "axios": "^0.26.1",
     "bulma": "^0.9.3",
+    "bulma-toast": "^2.4.1",
     "core-js": "^3.8.3",
+    "css": "^3.0.0",
+    "framework": "^0.6.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0"
