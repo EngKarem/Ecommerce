@@ -2,6 +2,7 @@
   "dependencies": {
     "axios": "^0.26.1",
     "bulma": "^0.9.3",
+    "bulma-toast": "^2.4.1",
     "css": "^3.0.0",
     "framework": "^0.5.3"
   }
